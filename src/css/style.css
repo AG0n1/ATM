@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.verticalCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.horizontalCenter {
+    display: flex;
+    align-items: center;
+}
+
+.absoluteCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    height: 5vw;
+}
+
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogo {
+
+}
