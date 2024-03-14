@@ -7,6 +7,14 @@
     font-family: "Inknut Antiqua", serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #001E20;
+}
+
 html {
     background: #001E20;
 }
@@ -46,18 +54,33 @@ header {
 }
 
 .headerLogo {
-    font-size: 30px;
+    font-size: 40px;
     color: #001E20;
+}
+
+.headerNav {
+    color: #001E20;
+    font-size: 20px;
+    width: 60%;
+}
+
+.headerNav > a {
+    margin-right: 100px;
 }
 
 .headerProfile {
     width: 70px;
     height: 70px;
 
-    border: 1px solid;
+    border: 3px solid;
     cursor: pointer;
 
     border-radius: 50%;
+
+    background: url("../images/profile-round-1345-svgrepo-com.svg");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .registrationForm {
@@ -167,3 +190,15 @@ header {
     }
 }
 
+/* In progress */
+
+.inProgress {
+    width: 80%;
+    height: 51.25vw;
+
+    font-size: 40px;
+
+    color: #FAD225;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -20,12 +20,14 @@ function Header() {
     return (
         <header className="verticalCenter">
             <div className="container absoluteCenter headerInfo">
-                <a className="absoluteCenter headerLogo">
+                <a href='/' className="absoluteCenter headerLogo">
                     CropTopia
                 </a>
 
-                <div className="absoluteCenter headerNav">
-                    
+                <div className="verticalCenter headerNav">
+                    <a href="/inProgress">About us</a>
+                    <a href="/inProgress">News</a>
+                    <a href="/inProgress">Prices</a>
                 </div>
 
                 <div className="absoluteCenter headerProfile" onClick={toggleRegistrationForm}>
