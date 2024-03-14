@@ -1,23 +1,41 @@
+import React, { useState } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
+import Form from '../Form';
+
 
 
 function Header() {
+    const [showRegistrationForm, setShowRegistrationForm] = useState(false);
+    const navigate = useNavigate()
+    const toggleRegistrationForm = () => {
+        setShowRegistrationForm(!showRegistrationForm);
+        if (!showRegistrationForm) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+            navigate('/personalPage')
+        }
+    }
+
     return (
         <header className="verticalCenter">
-            <div className="container headerInfo">
-                <div className="headerLogo">
-                    huds
+            <div className="container absoluteCenter headerInfo">
+                <div className="absoluteCenter headerLogo">
+                    CropTopia
                 </div>
 
-                <div className="headerNav">
-                    hud
+                <div className="absoluteCenter headerNav">
+                    
                 </div>
 
-                <div className="headerProfile">
-                    hud
+                <div className="absoluteCenter headerProfile" onClick={toggleRegistrationForm}>
+                    {showRegistrationForm && (
+                        <Form />
+                    )}
                 </div>
             </div>
         </header>
     )
 }
 
-export default Header
+export default Header;

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 import Main from './components/main/Main';
 import Header from './components/header/Header';
+import Test from './components/test';
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <Header />
         <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="news" element/>
+            <Route path="personalPage" element={<Test />}/>
             <Route path="laws" element/>
             <Route path="forum" element/>
         </Routes>
