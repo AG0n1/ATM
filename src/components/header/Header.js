@@ -20,9 +20,9 @@ function Header() {
     return (
         <header className="verticalCenter">
             <div className="container absoluteCenter headerInfo">
-                <div className="absoluteCenter headerLogo">
+                <a className="absoluteCenter headerLogo">
                     CropTopia
-                </div>
+                </a>
 
                 <div className="absoluteCenter headerNav">
                     

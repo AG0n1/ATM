@@ -1,16 +1,19 @@
 import logo from "../../images/mainPhoto.png"
 import React, { useState } from 'react';
+import { Navigate, useNavigate } from "react-router-dom";
 import Form from '../Form';
 
 function Main() {
 
     const [showRegistrationForm, setShowRegistrationForm] = useState(false);
+    const navigate = useNavigate();
     const toggleRegistrationForm = () => {
         setShowRegistrationForm(!showRegistrationForm);
         if (!showRegistrationForm) {
             document.body.classList.add('no-scroll');
         } else {
             document.body.classList.remove('no-scroll');
+            navigate('/personalPage')
         }
     }
 
