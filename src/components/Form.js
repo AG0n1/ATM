@@ -1,8 +1,30 @@
 function Form() {
     return (
-        <div className="registrationForm">
-            
-        </div>
+        <form className="registrationForm">
+            <div className="horizontalCenter form-title">
+                Login
+            </div>
+            <div className="handleLoginEmail">
+                <div>
+                    <div className="emailTitle">
+                        Enter your username
+                    </div>
+                    <input className="formInp" placeholder="Your username..."></input>
+                </div>
+                
+                <div>
+                    <div className="userPassword">
+                        Enter your password
+                    </div>
+                    <input onBlur={(e) => {
+                        alert(e.target.value)
+                    }} className="formInp" id="password" type="password" placeholder="Your password..."></input>
+                </div>
+            </div>
+            <button className="absoluteCenter loginBtn" >
+                Login
+            </button>
+        </form>
     )
 }
 

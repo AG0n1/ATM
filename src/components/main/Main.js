@@ -27,11 +27,8 @@ function Main() {
 
                     <div className="info">
                         Empower your farmer cooperative with CropTopia – the intuitive accounting platform designed to streamline expense tracking, maximize profits, and foster financial transparency among members
-                        <button onClick={toggleRegistrationForm}>
+                        <button className="absoluteCenter" onClick={toggleRegistrationForm}>
                             Register
-                            {
-                                showRegistrationForm && (<Form />)
-                            }
                         </button>
                     </div>
                 </div>
@@ -41,6 +38,9 @@ function Main() {
                 </div>
             </div>
 
+            {showRegistrationForm && (
+                <Form />
+            )}
             
         </div>
     )

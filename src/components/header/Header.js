@@ -31,10 +31,11 @@ function Header() {
                 </div>
 
                 <div className="absoluteCenter headerProfile" onClick={toggleRegistrationForm}>
-                    {showRegistrationForm && (
-                        <Form />
-                    )}
+                    
                 </div>
+                {showRegistrationForm && (
+                    <Form />
+                )}
             </div>
         </header>
     )
