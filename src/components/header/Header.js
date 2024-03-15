@@ -28,6 +28,7 @@ function Header() {
                     <a href="/inProgress">About us</a>
                     <a href="/inProgress">News</a>
                     <a href="/inProgress">Prices</a>
+                    <a href="/personalPage">Personal Page</a>
                 </div>
 
                 <div className="absoluteCenter headerProfile" onClick={toggleRegistrationForm}>
