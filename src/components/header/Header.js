@@ -35,8 +35,8 @@ function Header() {
                     
                 </div>
                 {showRegistrationForm && (
-                    <Form />
-                )}
+                        <Form />
+                    )}
             </div>
         </header>
     )
